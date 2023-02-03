@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "moduleResolution": "Node",
+        "checkJs": false,
+        "jsx": "react",
+        "alwaysStrict": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": true,
+        "useUnknownInCatchVariables": true,
+        "pretty": true,
+        "types": [
+            "vite/client"
+        ],
+        "paths": {
+            "*": ["./src/type-declarations/*"]
+        },
+        "plugins": [
+            { "name": "ts-css-modules-vite-plugin", "root": "./" }
+        ],
+    },
+    "ts-node": {
+        "esm": true,
+        "compilerOptions": {
+            "lib": [
+                "ESNext"
+            ],
+            "types": [
+                "vite/client"
+            ],
+            "jsx": "react"
+        }
+    }
+}
